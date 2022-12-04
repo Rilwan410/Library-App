@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src = 'app.js' defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,700&family=Orbitron:wght@700;800&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Library App</title>
+    <style> 
+    .active{display:none}
+    </style>
+</head>
+<body>
+
+<!-- <i class="fa-solid fa-plus"></i> (Add this plus as the 'Add Book' when the time comes )--> 
+<div class='stickybar'>
+    <div class="decoration">
+        <i class="fa fa-book" style="font-size:50px;"></i>
+        <div class="text"><span class="l">l</span><span class="i">i</span  ><span class='br'>br</span><span class ='a'>a</span><span class="ry">ry</span></div>
+    </div>
+    <button class="log-in"> Log in</button>
+</div>
+<!-- Overlay -->
+<div class="overlay active"></div>
+
+
+ <!-- Add-Button -->
+<div class="add-button">
+    <i class="fa fa-plus"></i> 
+</div>
+
+<!-- Add Book -->
+<div class="container active">
+    <form class="book-submit">
+    <h2>Add new book</h2>
+    <input  required class='title input-box title' type="text" required placeholder="Title"/>
+    <input required class='author input-box author' type="text" max= '100' required placeholder="Author"/>
+    <input reuqired class='pages input-box pages' type="number" max='10000' required placeholder="Pages"/>
+    <div class="read-info">
+    <label class="read-status">Have you read it?</label>
+    <input type="checkbox" class="checkbox">
+    </div>
+    <input type="submit" value="Submit" class="submit-btn">
+    </form>
+</div>
+
+<!-- Book Cards -->
+<div class="books-grid">
+ <!-- <div class="book-card">
+        <p class="book-card-text">jsdivdsafkmalkdmflkamsdlkfmasdlkfmksd</p>
+        <p class="book-card-text">ds</p>
+        <p class="book-card-text">23 pages</p>
+        <div class='books-grid-buttons'>
+        <button class="book-button read">Read</button>
+        <button class="book-button remove">Remove</button><ion-icon name="close-outline"></ion-icon>
+        </div>
+    </div>
+   -->
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
